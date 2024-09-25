@@ -78,6 +78,18 @@ const sumAge = csvString.reduce((acc, person) => acc + parseInt(person.age), 0);
 console.log( "Sum of ages", sumAge)
  
 // Then use the result to calculate the average age.
-const averageAge = sumAge/ mapped.csvString.length;
+
+const averageAge = sumAge / csvString.length;
 
 console.log("Average age:", averageAge);
+
+
+// Part 3 
+
+function incrementAge(obj) {
+    if(!obj.age) {
+
+
+        
+    }
+}
