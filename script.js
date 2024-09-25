@@ -55,7 +55,24 @@ recursiveNumber(5)
 console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
 
 //PART 2
+
 const csvString = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id: "48", name: "Barry", occupation: "Runner", age: "25" }, { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
 
+//sort
+
 console.log(csvString.sort((a, b) => Number(a.age) - Number(b.age)));
+
+// Filter the array to remove entries with an age greater than 50
+const filteredByAge = csvString.filter(person => parseInt(person.age) <= 50);
+console.log("Remove age over 50:", filteredByAge);
+
+
+  // Map the array to change the “occupation” key to “job” and increment every age by 1
+
+const Data = csvString.map(person => ({ ...person, job: person.occupation, age: Number(person.age) +1,}));
+console.log("Change occupation to 'job' and increment age by 1", Data);
+
+// Use the reduce method to calculate the sum of the ages.
+// Then use the result to calculate the average age.
+
 
