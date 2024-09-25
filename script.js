@@ -73,6 +73,11 @@ const Data = csvString.map(person => ({ ...person, job: person.occupation, age: 
 console.log("Change occupation to 'job' and increment age by 1", Data);
 
 // Use the reduce method to calculate the sum of the ages.
+
+const sumAge = csvString.reduce((acc, person) => acc + parseInt(person.age), 0);
+console.log( "Sum of ages", sumAge)
+ 
 // Then use the result to calculate the average age.
+const averageAge = sumAge/ mapped.csvString.length;
 
-
+console.log("Average age:", averageAge);
