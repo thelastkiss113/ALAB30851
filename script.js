@@ -86,10 +86,35 @@ console.log("Average age:", averageAge);
 
 // Part 3 
 
+const person = {
+    name: "John",
+    occupation: "Engineer",
+    age: 30
+  };
+
 function incrementAge(obj) {
     if(!obj.age) {
-
-
-        
+        obj.age = 0;
     }
+    obj.age ++;
+    obj.updated_at = new Date();
 }
+
+function incrementAgeAndCopy(obj) {
+    const copy = {...obj };
+    if (!copy.age) {
+        copy.age = 0;
+    }
+    copy.age++;
+    copy.updated_at = new Date();
+    return copy;
+}
+
+incrementAge(person);
+const personCopy = incrementAgeAndCopy(person);
+console.log(personCopy);
+console.log(person);
+
+
+
+
