@@ -1,4 +1,5 @@
-// //Take an array of numbers and return the sum.
+// Part 1 // 
+//Take an array of numbers and return the sum.
 // Take an array of numbers and return the average.
 // Take an array of strings and return the longest string.
 // Take an array of strings, and a number and return an array of the strings that are longer than the given number. 
@@ -6,7 +7,7 @@
 // Take a number, n, and print every number between 1 and n without using loops. Use recursion.
 
 
-//Part1
+//Part 1
 const numArray = [1, 2, 3, 4, 5]
 const arrayOfStrings = ["abc", "ab", 'a']
 
